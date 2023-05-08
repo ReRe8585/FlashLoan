@@ -180,7 +180,6 @@ contract FlashloanV3 is FlashLoanSimpleReceiverBase {
         override
         returns (bool)
     {
-        // TODO: implement your logic
         address[] memory pair = new address[](2);
         uint[] memory output = new uint[](2);
 
