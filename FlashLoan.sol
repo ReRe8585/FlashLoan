@@ -123,18 +123,12 @@ interface IUniswapV2Factory {
 
 // ----------------------IMPLEMENTATION------------------------------
 contract FlashloanV3 is FlashLoanSimpleReceiverBase {
-    // TODO: define constants used in the contract including ERC-20 tokens, Uniswap router, Aave address provider, etc.
-    //  Aave V3 DAI address (Goerli testnet): 0xDF1742fE5b0bFc12331D8EAec6b478DfDbD31464
-    //  Uniswap V2 router address (Goerli testnet): 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
-    //  DAI: 0xDF1742fE5b0bFc12331D8EAec6b478DfDbD31464
-    //  MTA: 0xE68f8ca368F9aC387634ad04654Da239F7DB6b96
-    //  MTB: 0xCA82465D445BD0528C95073e0195c19De8934663
+
     address public constant Uniswap_Router = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
     address public constant DAI = 0xDF1742fE5b0bFc12331D8EAec6b478DfDbD31464;
     address public constant MTA = 0xE68f8ca368F9aC387634ad04654Da239F7DB6b96;
     address public constant MTB = 0xCA82465D445BD0528C95073e0195c19De8934663;
     address payable owner;
-    // END TODO
 
     using SafeMath for uint256;
 
